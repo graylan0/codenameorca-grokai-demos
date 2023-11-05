@@ -3,9 +3,7 @@
 
 
 ## Demo Image
-![image](https://github.com/graylan0/psycho-detection/assets/34530588/23e5a510-e13b-44df-84c7-8b58338abcdb)
-
-:![image](https://github.com/graylan0/humoids.com/assets/34530588/fa61b228-cd45-4443-a8e5-493581e20742)
+![image](https://github.com/graylan0/codenameorca-grokai-demos/assets/34530588/7856a5d0-e3ca-4570-962a-1cc85694acde)
 
 ### Title: Humoids.com GrokAi Demo Weather/Recipe Insights
 
