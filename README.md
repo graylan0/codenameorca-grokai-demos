@@ -1,7 +1,8 @@
 # codenameorca-grokai-demos
 
 A collection of AI Demostrations inspired by Carl Sagan, Elon Musk, Gordon Ramsey, Nicola Tesla, and many others.
-
+# Vision
+https://www.youtube.com/watch?v=Dmav93f0gD8
 Starting with
 
 # Recipes and Weather
