@@ -109,7 +109,3 @@ pip install sqlite3
 pip install flask
 pip install bleach
 ```
-### Summary
-Humoids.com Weather Robot is a comprehensive solution for weather analysis and location suggestions. It combines various technologies to provide an intuitive and efficient user experience. The code is hosted on GitHub, making it accessible for further development and collaboration.
-
-Explore the application at [https://humoids.com/](https://humoids.com/) and contribute to its growth!
