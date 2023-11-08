@@ -5,7 +5,12 @@
 
 ### Title: Humoids.com Fitness Robot
 
-# Quantum Emotional-Mapped Fitness Suggestions
+# Quantum Emotional-Mapped Weather and Fitness Suggestions
+
+
+## DEMO:
+![image](https://github.com/graylan0/codenameorca-grokai-demos/assets/34530588/56b3f456-194d-49f0-b1ee-bdb5f6271cf9)
+
 
 This script is a comprehensive Python application that utilizes several libraries and frameworks to perform tasks such as emotion recording, sentiment analysis, quantum state generation, and fitness insights detection. It is designed to run as a web service using Flask and can be deployed on local servers.
 
