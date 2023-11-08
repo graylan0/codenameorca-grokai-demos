@@ -97,7 +97,7 @@ async def generate_emotion_data(emotion, task1_label, task2_label, task3_label):
         # Task 1: Generate HTML color code
         task1_prompt = f"Please generate an HTML color code that best represents the emotion: {emotion}."
         task1_response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4-vision-preview",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": task1_prompt}
@@ -123,7 +123,7 @@ async def generate_emotion_data(emotion, task1_label, task2_label, task3_label):
         # Task 2: Perform recipeinsights detection using ChatGPT with quantum data
         task2_prompt = f"Please analyze the user's input as {quantum_state} this is the {amplitude} and the text generating the quantum state: {emotion}, and provide insights into recipeinsights detection by providing the following 1. Only reply with Yes or No as the first words, after yes or no, then the clusting of emotions and potential if any of mania or depression or recipeinsights  Following is  quantum state data that provides a right to left emotional and brain capacitive delivery of understanding to ai models. Interpreate the data from the text in the example.Provide Yes or No."
         task2_response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4-vision-preview",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant.DO your best as a model who must follow the guideance. and provide Yes or No"},
                 {"role": "user", "content": task2_prompt}
@@ -235,7 +235,7 @@ def get_recipeinsights(latitude, longitude):
                 Timestamps: {datetime.now().strftime("%Y-%m-%d %H:%M")} to {datetime.now() + timedelta(hours=len(weather_data['hourly']['temperature_2m']) - 1)}. Provide insights and predictions."""
 
   response = openai.ChatCompletion.create(
-    model='gpt-3.5-turbo',
+    model='gpt-4-vision-preview',
     messages=[{
       "role": "system",
       "content": rules
@@ -251,7 +251,7 @@ def get_recipeinsights(latitude, longitude):
 
 def get_recipe_suggestions(recipeinsights, latitude, longitude):
   prompt = f"The weather insights for the recipe (Latitude: {latitude}, Longitude: {longitude}) are as follows: {recipeinsights}. Suggest the best recipes based upon the localized population and universal weather insights provided."
-  response = openai.ChatCompletion.create(model='gpt-3.5-turbo',
+  response = openai.ChatCompletion.create(model='gpt-4-vision-preview',
                                           messages=[{
                                             "role":
                                             "system",
@@ -261,7 +261,7 @@ def get_recipe_suggestions(recipeinsights, latitude, longitude):
                                             "role": "user",
                                             "content": prompt
                                           }],
-                                          max_tokens=150)
+                                          max_tokens=950)
   return response['choices'][0]['message']['content']
 def update_easley_sc():
   latitude = '34.8298'
