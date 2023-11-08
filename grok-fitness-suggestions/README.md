@@ -108,4 +108,6 @@ pip install openai
 pip install sqlite3
 pip install flask
 pip install bleach
+pip install pennylane
+pip install SpeechRecognition
 ```
