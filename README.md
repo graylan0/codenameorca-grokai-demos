@@ -6,3 +6,6 @@ Starting with
 
 # Recipes and Weather
 https://github.com/graylan0/codenameorca-grokai-demos/tree/main/grok-weather-recipes
+
+# Fitness Suggestions 
+https://github.com/graylan0/codenameorca-grokai-demos/tree/main/grok-fitness-suggestions
