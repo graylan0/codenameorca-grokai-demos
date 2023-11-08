@@ -71,7 +71,7 @@ This script is a comprehensive Python application that utilizes several librarie
 - Access the web service by navigating to `localhost:8080` in your web browser.
 - Use the provided web forms to interact with the service for emotion recording and fitness insights.
 
-     ```
+
 3. #### Install required Pips
 
 ```bash
