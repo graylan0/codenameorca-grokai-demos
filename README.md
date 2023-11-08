@@ -7,6 +7,9 @@ Starting with
 # Recipes and Weather
 https://github.com/graylan0/codenameorca-grokai-demos/tree/main/grok-weather-recipes
 
+## Demo Image
+![image](https://github.com/graylan0/codenameorca-grokai-demos/assets/34530588/7856a5d0-e3ca-4570-962a-1cc85694acde)
+
 # Fitness Suggestions 
 https://github.com/graylan0/codenameorca-grokai-demos/tree/main/grok-fitness-suggestions
 
