@@ -96,7 +96,7 @@ async def generate_emotion_data(emotion, task1_label, task2_label, task3_label):
         # Task 1: Generate HTML color code
         task1_prompt = f"Please generate an HTML color code that best represents the emotion: {emotion}."
         task1_response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4-vision-preview",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": task1_prompt}
@@ -122,7 +122,7 @@ async def generate_emotion_data(emotion, task1_label, task2_label, task3_label):
         # Task 2: Perform fitnessinsights detection using ChatGPT with quantum data
         task2_prompt = f"Please analyze the user's input as {quantum_state} this is the {amplitude} and the text generating the quantum state: {emotion}, and provide insights into fitnessinsights detection by providing the following 1. Enact advancedd understanding through the quantum clusting of emotions then specificl design eeven taylor insights for user food recipe suggestions customized from inspection of quantum state emotion mmaps, quantum insights.  Following is quantum state data that provides a right to left emotional and brain capacitive delivery of understanding to ai models. Interpreate the data from the text in the example. Highly Fun and Chatty about food "
         task2_response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4-vision-preview",
             messages=[
                 {"role": "system", "content": " Please analyze the user's input as {quantum_state} this is the {amplitude} and the text generating the quantum state: {emotion}, and provide insights into fitnessinsights detection by providing the following 1. Enact advancedd understanding through the quantum clusting of emotions then specificl design eeven taylor insights for user food recipe suggestions customized from inspection of quantum state emotion mmaps, quantum insights.  Following is quantum state data that provides a right to left emotional and brain capacitive delivery of understanding to ai models. Interpreate the data from the text in the example. Highly Fun and Chatty about food"},
                 {"role": "user", "content": task2_prompt}
@@ -229,28 +229,31 @@ def get_fitnessinsights(latitude, longitude):
   if weather_data is None:
     return "Error fetching weather data"
 
-  rules = f"""Analyze the weather data for the given recipe with the following details:
+  rules = f"""Analyze the weather data for the given location with the following details: Provide Indepth Details to the weather
                 Temperature: {weather_data['hourly']['temperature_2m']},
                 Timestamps: {datetime.now().strftime("%Y-%m-%d %H:%M")} to {datetime.now() + timedelta(hours=len(weather_data['hourly']['temperature_2m']) - 1)}. Provide insights and predictions."""
 
   response = openai.ChatCompletion.create(
-    model='gpt-3.5-turbo',
+    model='gpt-4-vision-preview',
     messages=[{
       "role": "system",
       "content": rules
+      
     }, {
       "role":
       "user",
       "content":
+      
       "Please analyze the weather data and provide insights."
+      
     }],
-  )
+  max_tokens=950)
   return response['choices'][0]['message']['content']
 
 
 def get_fitness_suggestions(fitnessinsights, latitude, longitude):
-  prompt = f"The weather insights for the recipe (Latitude: {latitude}, Longitude: {longitude}) are as follows: {fitnessinsights}. Suggest the best recipes based upon the localized population and universal weather insights provided."
-  response = openai.ChatCompletion.create(model='gpt-3.5-turbo',
+  prompt = f"The weather insights for the recipe (Latitude: {latitude}, Longitude: {longitude}) are as follows: {fitnessinsights}. Suggest the unique fitness routines based upon the localized population and universal weather insights provided. "
+  response = openai.ChatCompletion.create(model='gpt-4-vision-preview',
                                           messages=[{
                                             "role":
                                             "system",
