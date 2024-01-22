@@ -1,4 +1,4 @@
-# codenameorca-grokai-demos
+# codenameorca-grokai-demos Colobit Emotional Research, use with caution
 
 A collection of AI Demostrations inspired by Carl Sagan, Elon Musk, Gordon Ramsey, Nicola Tesla, and many others.
 # Vision
